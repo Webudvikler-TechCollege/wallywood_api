@@ -19,7 +19,7 @@ import PosterGenreRel from '../../Models/poster-genre-rel.model.js';
  */
 class SeedController {
 	constructor() {
-		console.log('TrashGuide Seed Controller: Running seeds');
+		console.log('Seed Controller: Running seeds');
 	} 
 
 	seed_from_csv = async () => {
