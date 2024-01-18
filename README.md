@@ -1,9 +1,20 @@
 # Wallywood API
 API'et er bygget i NodeJS, Express og Sequelize med MySQL database som datakilde.
-## Overordnet filstruktur
-API'ets modeller og controllers  er delt i mapperne *App* og *Core*. I Core mappen finder du faste elementer som brugere, brugergrupper og organisationer. I App mappen ligger alle de filer som hører til den specifikke løsning - det vil sige kategorier, kategorier, nyheder, reservationer osv.
 
-Alle routes ligger fordelt på filerne *app*, *core* og *install* i mappen *Routes*.
+## Oversigt over filstruktur
+- Assets: mappe til billeder m.m.
+- Config: mappe til database config fil
+- Controllers: mappe til controller filer. I undermappen System ligger controllers til brugersystemet.
+- Data: mappe til csv filer med struktureret data. Disse bruges til indlæsning af data.
+- Middleware: mappe med hjælpefunktioner og login funktionalitet
+- Models: mappe til model filer. I undermappen System ligger modeller til brugersystemet.
+- Routes: mappe med tre routes filer:
+	- install: routes til opsætning af databaser
+	- main: routes til shoppens elementer
+	- system: routes til brugersystemet
+
+System mapperne indeholder faste elementer som brugere, brugergrupper og organisationer. 
+
 ## Postman
 Der ligger en Postman dokumentation på nedenstående link som giver et overblik over de forskellige endpoints i API'et og hvordan de skal kaldes:
 https://documenter.getpostman.com/view/6540576/2s935iu6X9
