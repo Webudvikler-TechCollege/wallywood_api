@@ -1,4 +1,3 @@
-import { query } from "express"
 import { Sequelize } from "sequelize"
 
 /**
