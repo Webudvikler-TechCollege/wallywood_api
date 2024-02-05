@@ -40,7 +40,7 @@ class PosterController {
 			include: {
 				model: Genre,
 				as: 'genres',
-				attributes: ['id', 'title'],
+				attributes: ['id', 'title', 'slug'],
 				where: (genre) ? { slug: genre } : null
 			}
 		})

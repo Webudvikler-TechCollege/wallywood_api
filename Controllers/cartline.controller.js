@@ -21,7 +21,7 @@ export default class CartLineController {
 		const user_id = await getUserFromToken(req, res)
 
 		// Indhenter parametre fra request objekt
-		const qp = QueryParamsHandle(req, 'id, poster_id')
+		const qp = QueryParamsHandle(req, 'id, poster_id, quantity')
 
 		if(user_id) {
 			try {
