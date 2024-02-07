@@ -95,6 +95,7 @@ class UserController {
 	 * @param {Object} res Express Response Object
 	 */
 	create = async (req, res) => {
+		console.log(req.body)
 		// Destructure assignment af form data fra request body
 		const { firstname, lastname, email, password, org_id, refresh_token, groups } = req.body;
 
